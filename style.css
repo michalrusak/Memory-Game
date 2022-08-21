@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    border: 3px solid white;
+}
+
+@media (orientation: portrait){
+    .card{
+        flex-basis: 33.33vw;
+        height: 16.66vh;
+    }
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.violet{
+    background-color: violet;
+}
+
+.greenyellow{
+    background-color: greenyellow;
+}
+
+.forestgreen{
+    background-color: forestgreen;
+}
+
+.cadetblue{
+    background-color: cadetblue;
+}
+
+.rosybrown{
+    background-color: rosybrown;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.peru{
+    background-color: peru;
+}
+
+
+.hidden{
+    background-color: #000;
+}
+
+.off{
+    background-color: #aaa;
+}
+.modal-wrap{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: antiquewhite;
+    width: 300px;
+    height: 150px;
+    border-radius: 2px;
+}
+.text{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.refresh{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+}
+.none{
+    display: none;
+}
+.blur{
+    filter: blur(3px);
+}
